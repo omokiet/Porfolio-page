@@ -56,7 +56,7 @@ export default function Projects() {
               </p>
 
               {/* Tags wrapper */}
-              <div className="flex flex-wrap justify-start gap-2 mt-auto">
+              <div className="flex flex-wrap justify-center w-full gap-2 mt-auto">
                 {project.tags.map((tag) => (
                   <span 
                     key={tag}

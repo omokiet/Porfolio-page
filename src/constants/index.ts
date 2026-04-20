@@ -16,7 +16,7 @@ export const USER_INFO = {
   about_strengths: 'Điểm mạnh: Có khả năng tự học tốt, tư duy logic nhạy bén và sự tỉ mỉ trong việc thiết kế hạ tầng. Tôi yêu thích Công nghệ, đặc biệt là về bảo mật và tự động hóa, tôi luôn tìm cách để có thể đảm bảo được 2 vấn đề này trong các dự án của mình.',
   education: 'Đại học Sư phạm TP.HCM 2023-2027',
   major: 'Fullstack Development / Database Designer/ DevOps Engineer',
-  languages: 'C++, C#, Python, Dart, JS, TS',
+  languages: 'C++, C#, Python, JS, TS',
 };
 
 export const NAV_LINKS = [

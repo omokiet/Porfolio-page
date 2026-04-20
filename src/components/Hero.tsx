@@ -1,5 +1,4 @@
 import { USER_INFO } from '../constants';
-import { ArrowRight, Sparkles } from 'lucide-react';
 import { Typewriter } from './Typewriter';
 
 export default function Hero() {
@@ -32,15 +31,13 @@ export default function Hero() {
           href="#projects"
           className="group inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-emerald-500 hover:bg-emerald-400 text-[#050f05] rounded-sm transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] relative hover:-translate-y-1"
         >
-          <Sparkles size={18} className="text-[#050f05]" />
-          <span className="font-bold tech-font uppercase text-sm tracking-widest pl-1 pt-0.5">Xem Dự Án</span>
+          <span className="font-bold tech-font uppercase text-sm tracking-widest pt-0.5">Xem Dự Án</span>
         </a>
         <a 
           href="mailto:hello@example.com"
           className="group inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-transparent border border-zinc-700 hover:border-emerald-500/50 hover:bg-zinc-800/50 text-zinc-300 rounded-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(16,185,129,0.1)]"
         >
-          <span className="font-bold tech-font uppercase text-sm tracking-widest pl-1 pt-0.5">Liên Hệ</span>
-          <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform ml-1" />
+          <span className="font-bold tech-font uppercase text-sm tracking-widest pt-0.5">Liên Hệ</span>
         </a>
       </div>
 
