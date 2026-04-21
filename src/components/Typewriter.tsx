@@ -17,6 +17,8 @@ export function Typewriter({
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
+  if (!words || words.length === 0) return null;
+
   useEffect(() => {
     const currentWord = words[wordIndex];
     let timeoutId: ReturnType<typeof setTimeout>;

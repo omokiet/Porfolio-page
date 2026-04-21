@@ -1,4 +1,4 @@
-import { Mail, Globe, Share2, Settings, Palette, Database, Lock, Gamepad2, Rocket } from 'lucide-react';
+import { Settings, Palette, Database, Lock, Rocket } from 'lucide-react';
 import kietImg from '../assets/kiet.jpg';
 
 export const USER_INFO = {
@@ -91,8 +91,8 @@ export const PROJECTS_DATA = [
     description: 'Hệ thống bán game bản quyền tích hợp AI Chatbot, gợi ý game thông minh và thanh toán MoMo/PayPal.',
     image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format&fit=crop',
     tags: ['Laravel 11', 'MongoDB', 'TailwindCSS', 'Docker', 'AI Chatbot'],
-    link: '#',
-    github: '#',
+    link: '#', // TODO: Replace with actual project URL
+    github: '#', // TODO: Replace with actual GitHub repository URL
   },
   {
     id: 2,
@@ -102,8 +102,8 @@ export const PROJECTS_DATA = [
     description: 'Quản lý công việc thông minh với Trợ lý ảo Miku (Gemini AI), tích hợp Redis để tối ưu hiệu suất.',
     image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?q=80&w=2064&auto=format&fit=crop',
     tags: ['React 19', 'Node.js', 'Redis', 'Gemini AI'],
-    link: '#',
-    github: '#',
+    link: '#', // TODO: Replace with actual project URL
+    github: '#', // TODO: Replace with actual GitHub repository URL
   },
   {
     id: 3,
@@ -113,8 +113,8 @@ export const PROJECTS_DATA = [
     description: 'Game 2D Platformer cơ bản tập trung vào xử lý vật lý, hệ thống mạng sống và animation nhân vật mượt mà.',
     image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop',
     tags: ['Unity', 'C#', '2D Physics', 'Animation', 'Double Jump'],
-    link: '#',
-    github: '#',
+    link: '#', // TODO: Replace with actual project URL
+    github: '#', // TODO: Replace with actual GitHub repository URL
   },
   {
     id: 4,
@@ -124,8 +124,8 @@ export const PROJECTS_DATA = [
     description: 'Nền tảng đặt vé xem phim trực tuyến hiện đại với lịch chiếu realtime.',
     image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop',
     tags: ['React', 'Express', 'MongoDB'],
-    link: '#',
-    github: '#',
+    link: '#', // TODO: Replace with actual project URL
+    github: '#', // TODO: Replace with actual GitHub repository URL
   },
   {
     id: 5,
@@ -135,8 +135,8 @@ export const PROJECTS_DATA = [
     description: 'Hệ thống tra cứu thuật ngữ Lập trình Hướng đối tượng.',
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop',
     tags: ['C#', '.NET', 'SQLite'],
-    link: '#',
-    github: '#',
+    link: '#', // TODO: Replace with actual project URL
+    github: '#', // TODO: Replace with actual GitHub repository URL
   },
   {
     id: 6,
@@ -146,8 +146,8 @@ export const PROJECTS_DATA = [
     description: 'Phần mềm quản lý phòng máy Cyber Game tích hợp thanh toán.',
     image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop',
     tags: ['C++', 'Qt Framework', 'SQL Server'],
-    link: '#',
-    github: '#',
+    link: '#', // TODO: Replace with actual project URL
+    github: '#', // TODO: Replace with actual GitHub repository URL
   },
 ];
 

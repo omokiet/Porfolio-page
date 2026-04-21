@@ -5,19 +5,19 @@ export default function Certificates() {
   return (
     <section id="certificates" className="w-full flex flex-col items-center animate-fade-in-up delay-200 mt-20">
       <div className="flex items-center gap-4 mb-10 text-center">
-        <h2 className="text-3xl md:text-5xl font-bold text-emerald-400 drop-shadow-[0_0_15px_rgba(52,211,153,0.5)] font-serif">
+        <h2 className="text-4xl md:text-6xl font-bold text-emerald-400 drop-shadow-[0_0_15px_rgba(46,168,112,0.5)] font-serif tracking-tight">
           Certificates & Awards
         </h2>
       </div>
 
       <div className="flex flex-col w-full gap-6">
         {CERTIFICATES_DATA.map((cert) => (
-          <div 
-            key={cert.id} 
-            className="group flex flex-col md:flex-row md:items-center justify-between p-6 md:p-8 rounded-2xl bg-[#0d1c10] border border-zinc-800/60 shadow-lg hover:border-emerald-500/40 hover:-translate-y-1 transition-all duration-300"
+          <div
+            key={cert.id}
+            className="group flex flex-col md:flex-row md:items-center justify-between p-6 md:p-8 rounded-2xl bg-[#0d1c10] shadow-lg hover:-translate-y-1 transition-all duration-300"
           >
             <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 mb-4 md:mb-0">
-              <span className="flex items-center justify-center p-4 rounded-xl bg-[#0a110a] border border-zinc-700/50 text-emerald-400 shadow-inner">
+              <span className="flex items-center justify-center p-4 rounded-xl bg-[#0a110a] text-emerald-400 shadow-inner">
                 <ShieldAlert size={28} />
               </span>
               <div className="flex flex-col">

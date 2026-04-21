@@ -5,25 +5,27 @@
   --font-sans: "Outfit", system-ui, -apple-system, sans-serif;
   --font-serif: "Space Grotesk", sans-serif;
   --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  --color-brand: #34d399;
-  --color-brand-dark: #059669;
+  --color-brand: #2ea870;
+  --color-brand-dark: #1d6b48;
+  --color-bg-primary: #0a0a0b;
+  --color-bg-secondary: #111113;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; background-color: #050f05; }
+html { scroll-behavior: smooth; background-color: var(--color-bg-primary); }
 
 body {
   font-family: var(--font-sans);
-  background-color: #000000;
-  color: #a1a1aa; /* zinc-400 for regular text */
+  background-color: var(--color-bg-primary);
+  color: #a1a1aa;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: rgba(52, 211, 153, 0.2);
-  color: #34d399;
+  background-color: rgba(46, 168, 112, 0.2);
+  color: #2ea870;
 }
 
 .text-brand {
