@@ -32,7 +32,7 @@ export const SKILLS_DATA = [
     title: 'Backend Engineering',
     description: 'Xây dựng hệ thống RESTful API hiệu năng cao với xác thực JWT, tích hợp cổng thanh toán trực tuyến, quản lý bộ nhớ đệm (caching) và tối ưu hóa hiệu suất truy vấn dữ liệu phức tạp.',
     icon: Settings,
-    tags: ['NestJS', 'FastAPI', 'Node.js', 'PostgreSQL', 'Python'],
+    tags: ['NextJS', 'FastAPI', 'Node.js', 'PostgreSQL', 'Python'],
   },
   {
     id: 2,
