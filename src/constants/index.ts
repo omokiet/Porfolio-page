@@ -30,37 +30,37 @@ export const SKILLS_DATA = [
   {
     id: 1,
     title: 'Backend Engineering',
-    description: 'Building REST APIs with JWT authentication, payment integration, caching, and query optimization.',
+    description: 'Xây dựng hệ thống RESTful API hiệu năng cao với xác thực JWT, tích hợp cổng thanh toán trực tuyến, quản lý bộ nhớ đệm (caching) và tối ưu hóa hiệu suất truy vấn dữ liệu phức tạp.',
     icon: Settings,
-    tags: ['NestJS', 'FastAPI', 'Node.js', 'REST API', 'Python'],
+    tags: ['NestJS', 'FastAPI', 'Node.js', 'PostgreSQL', 'Python'],
   },
   {
     id: 2,
     title: 'Frontend Development',
-    description: 'Creating responsive UIs with React, Tailwind css, state management, Material-UI, and Client-side optimization.',
+    description: 'Phát triển giao diện người dùng (UI/UX) hiện đại, tương thích hoàn hảo trên đa thiết bị, quản lý trạng thái ứng dụng đồng bộ và tối ưu hóa tốc độ tải trang phía Client-side.',
     icon: Palette,
-    tags: ['React + Vite', 'Next.js', 'TypeScript', 'Tailwind css', 'Material-UI'],
+    tags: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Material-UI'],
   },
   {
     id: 3,
     title: 'Database & ORM',
-    description: 'Designing data models, writing optimized queries, and managing database schemas with ORMs.',
+    description: 'Thiết kế và chuẩn hóa mô hình dữ liệu quan hệ và phi quan hệ, viết các truy vấn SQL tối ưu và quản lý cấu trúc schema linh hoạt thông qua các thư viện ORM mạnh mẽ.',
     icon: Database,
-    tags: ['PostgreSQL', 'MySQL', 'SQL Server', 'Redis', 'MongoDB','Neo4J','SQLAlchemy'],
+    tags: ['PostgreSQL', 'MongoDB', 'Redis', 'SQL Server', 'MySQL','Neo4J','SQLAlchemy'],
   },
   {
     id: 4,
     title: 'Auth & Security',
-    description: 'Implementing JWT authentication, RBAC, protected routing, and security best practices.',
+    description: 'Triển khai hệ thống xác thực bảo mật đa tầng, quản lý phân quyền người dùng chi tiết (RBAC), bảo vệ định tuyến API và áp dụng các tiêu chuẩn bảo mật Web OWASP.',
     icon: Lock,
-    tags: ['JWT', 'RBAC', 'OAuth2'],
+    tags: ['JWT', 'RBAC', 'OAuth2', 'Security'],
   },
   {
     id: 5,
     title: 'DevOps & Tools',
-    description: 'Containerization, version control, and deployment workflows for modern applications.',
+    description: 'Đóng gói ứng dụng bằng Docker, thiết lập quy trình tự động hóa triển khai, quản lý hạ tầng mã nguồn chuyên nghiệp và tối ưu hóa quy trình release sản phẩm.',
     icon: Rocket,
-    tags: ['Docker', 'Git', 'GitHub', 'Docker Compose'],
+    tags: ['Docker', 'Git', 'GitHub Actions', 'CI/CD'],
   },
 ];
 
@@ -85,90 +85,87 @@ export const TECH_STACK = [
 export const PROJECTS_DATA = [
   {
     id: 1,
-    title: 'Mirai Store',
-    category: 'Web',
-    subtitle: 'E-COMMERCE PLATFORM',
-    description: 'Hệ thống bán game bản quyền tích hợp AI Chatbot, gợi ý game thông minh và thanh toán MoMo/PayPal.',
-    image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2070&auto=format&fit=crop',
-    tags: ['Laravel 11', 'MongoDB', 'TailwindCSS', 'Docker', 'AI Chatbot'],
-    link: '#', // TODO: Replace with actual project URL
-    github: '#', // TODO: Replace with actual GitHub repository URL
+    title: 'Vul-Scanner',
+    category: 'Security',
+    subtitle: 'VULNERABILITY SCANNER',
+    description: 'Hệ thống quét lỗ hổng bảo mật toàn diện: rà soát cổng mạng (port scanning), kiểm tra chứng chỉ SSL/TLS, đánh giá cấu hình header bảo mật, quét thư mục ẩn và tự động tìm kiếm tên miền phụ (subdomain) cho website.',
+    image: '../public/Vul-scanner.png',
+    tags: ['Python', 'Nmap', 'Docker'],
+    link: 'https://vul-scanner.onrender.com', // TODO: Replace with actual project URL
+    github: 'https://github.com/omokiet/Vul-scanner.git', // TODO: Replace with actual GitHub repository URL
   },
   {
     id: 2,
-    title: 'TodoApp AI',
+    title: 'TodoApp',
     category: 'Web',
-    subtitle: 'AI TASK MANAGER',
-    description: 'Quản lý công việc thông minh với Trợ lý ảo Miku (Gemini AI), tích hợp Redis để tối ưu hiệu suất.',
+    subtitle: 'TASK MANAGER',
+    description: 'Ứng dụng quản lý công việc và thời gian cá nhân với giao diện trực quan, hỗ trợ phân loại mức độ ưu tiên, theo dõi tiến độ và tối ưu hóa hiệu suất làm việc hàng ngày.',
     image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?q=80&w=2064&auto=format&fit=crop',
-    tags: ['React 19', 'Node.js', 'Redis', 'Gemini AI'],
+    tags: ['React', 'Node.js', 'MongoDB'],
     link: '#', // TODO: Replace with actual project URL
     github: '#', // TODO: Replace with actual GitHub repository URL
   },
   {
     id: 3,
-    title: 'Basic Platformer',
-    category: 'Game',
-    subtitle: '2D GAME DEVELOPMENT',
-    description: 'Game 2D Platformer cơ bản tập trung vào xử lý vật lý, hệ thống mạng sống và animation nhân vật mượt mà.',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop',
-    tags: ['Unity', 'C#', '2D Physics', 'Animation', 'Double Jump'],
-    link: '#', // TODO: Replace with actual project URL
-    github: '#', // TODO: Replace with actual GitHub repository URL
-  },
-  {
-    id: 4,
-    title: 'Ciname Galyxa',
+    title: 'Coffee Manager',
     category: 'Web',
-    subtitle: 'FULL-STACK MOVIE BOOKING',
-    description: 'Nền tảng đặt vé xem phim trực tuyến hiện đại với lịch chiếu realtime.',
-    image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop',
-    tags: ['React', 'Express', 'MongoDB'],
-    link: '#', // TODO: Replace with actual project URL
-    github: '#', // TODO: Replace with actual GitHub repository URL
-  },
-  {
-    id: 5,
-    title: 'OOP Lookup System',
-    category: 'Software/App',
-    subtitle: 'EDUCATION & DEV TOOLS',
-    description: 'Hệ thống tra cứu thuật ngữ Lập trình Hướng đối tượng.',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop',
-    tags: ['C#', '.NET', 'SQLite'],
-    link: '#', // TODO: Replace with actual project URL
-    github: '#', // TODO: Replace with actual GitHub repository URL
-  },
-  {
-    id: 6,
-    title: 'CyberOps Manager',
-    category: 'Software/App',
-    subtitle: 'CYBER GAME MANAGEMENT',
-    description: 'Phần mềm quản lý phòng máy Cyber Game tích hợp thanh toán.',
-    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop',
-    tags: ['C++', 'Qt Framework', 'SQL Server'],
-    link: '#', // TODO: Replace with actual project URL
-    github: '#', // TODO: Replace with actual GitHub repository URL
-  },
+    subtitle: 'COFFEE SHOP MANAGEMENT',
+    description: 'Giải pháp quản lý quán cà phê hiện đại: điều hành nhân sự, kiểm soát kho hàng và sản phẩm, xử lý đơn hàng thời gian thực, tích hợp hệ thống báo cáo doanh thu và chăm sóc khách hàng.',
+    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop',
+    tags: ['FastAPI', 'React', 'PostgreSQL'],
+    link: 'https://github.com/MrT223/Coffee-Manager.git', // TODO: Replace with actual project URL
+    github: 'https://github.com/MrT223/Coffee-Manager.git', // TODO: Replace with actual GitHub repository URL
+  }
 ];
 
 export const CERTIFICATES_DATA = [
   {
     id: 1,
-    title: 'AWS Certified Solutions Architect',
-    organization: 'Amazon Web Services',
+    title: 'Basic of Cloud Compute',
+    organization: 'Google',
     year: '2025',
   },
   {
     id: 2,
-    title: 'Certified Kubernetes Administrator',
-    organization: 'CNCF',
-    year: '2024',
+    title: 'Cloud Computing Fundemental',
+    organization: 'Google',
+    year: '2025',
+  },
+  {
+    id: 3,
+    title: 'Getting Started with DevOps on AWS',
+    organization: 'AWS',
+    year: '2025',
+  },
+  {
+    id: 4,
+    title: 'AI Boost Bite: Your Personal AI Study Partner',
+    organization: 'Google',
+    year: '2025',
+  },
+  {
+    id: 5,
+    title: 'AI Boost Bite: Presentation Script with Gemini',
+    organization: 'Google',
+    year: '2025',
+  },
+  {
+    id: 6,
+    title: 'AI Boost Bite: Project Notebooks',
+    organization: 'Google',
+    year: '2025',
+  },
+  {
+    id: 7,
+    title: 'Gemini Certified Student',
+    organization: 'Google',
+    year: '2025',
   },
 ];
 
 export const CONTACT_DATA = {
-  email: 'hello@example.com',
+  email: 'kiettuanvocao2005@gmail.com',
   links: [
-    { label: 'Liên Hệ', url: 'mailto:hello@example.com' },
+    { label: 'Liên Hệ', url: 'mailto:kiettuanvocao2005@gmail.com' },
   ],
 };

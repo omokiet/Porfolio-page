@@ -6,13 +6,7 @@ export default function Hero() {
 
   return (
     <section id="hero" className="w-full pt-16 md:pt-28 flex flex-col items-center text-center gap-10">
-      {/* Top Badge */}
-      <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/30 border border-emerald-900/50 shadow-[0_0_15px_rgba(16,185,129,0.1)]">
-        <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.8)] animate-pulse"></span>
-        <span className="text-xs sm:text-sm text-emerald-300 font-medium tracking-wide">
-          {USER_INFO.status}
-        </span>
-      </div>
+      {/* Top Badge Removed */}
       
       {/* Main Headline */}
       <div className="flex flex-col items-center gap-6 max-w-4xl px-4">
