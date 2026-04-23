@@ -5,10 +5,11 @@ Cao Võ Tuấn Kiệt (kietcvt) - Trang Web Hồ Sơ Cá Nhân.
 Một trang web hồ sơ cá nhân hiệu năng cao, dựa trên kiến trúc Single Page Application, được xây dựng bằng các công nghệ web hiện đại. Tập trung vào giao diện người dùng cao cấp, thiết kế mờ ảo (glassmorphism) và bố cục hiển thị tốt trên mọi thiết bị nhằm giới thiệu kỹ năng, dự án và chứng chỉ nổi bật.
 
 ## Ngôn Ngữ và Công Nghệ
-- Nền tảng Frontend: React 19, TypeScript
-- Trình đóng gói: Vite
-- Trình bày giao diện: Tailwind CSS
-- Thư viện biểu tượng: Lucide React
+- Nền tảng Frontend: React 19, TypeScript - Đảm bảo tính nhất quán của dữ liệu và hiệu năng tối ưu cho ứng dụng Single Page.
+- Trình đóng gói: Vite - Tăng tốc độ phát triển và tối ưu hóa quá trình build sản phẩm.
+- Trình bày giao diện: Tailwind CSS 4.0 - Xây dựng giao diện hiện đại, linh hoạt với phong cách thiết kế Glassmorphism.
+- Thư viện biểu tượng: Lucide React - Bộ sưu tập biểu tượng vector sắc nét, đồng bộ và nhẹ nhàng.
+- Quản lý trạng thái: React Context / Hooks - Quản lý luồng dữ liệu cục bộ hiệu quả mà không cần thư viện bên thứ ba cồng kềnh.
 
 ## Cấu Trúc Dự Án
 - /src/components: Các thành phần giao diện tái sử dụng (Hero, About, Skills, Projects, Certificates, v.v.).
