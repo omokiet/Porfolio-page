@@ -20,21 +20,32 @@ export default function Hero() {
       </div>
 
       {/* Action Buttons */}
-      <div className="flex flex-wrap justify-center items-center gap-8 mt-6 animate-fade-in-up delay-100">
+      <div className="flex flex-col items-center gap-6 mt-6 animate-fade-in-up delay-100 px-4">
+        {/* Primary Action - Top */}
         <a
           href="#projects"
           aria-label="Xem dự án của tôi"
-          className="group inline-flex items-center justify-center gap-4 px-12 py-5 min-w-[180px] bg-emerald-500 hover:bg-emerald-400 text-[#050f05] rounded-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] relative hover:-translate-y-1"
+          className="group inline-flex items-center justify-center gap-3 px-16 py-5 bg-emerald-500 hover:bg-emerald-400 text-[#050f05] rounded-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] relative hover:-translate-y-1 w-full max-w-[320px]"
         >
           <span className="font-bold tech-font uppercase text-base tracking-widest">Xem Dự Án</span>
         </a>
-        <a
-          href={`mailto:${CONTACT_DATA.email}`}
-          aria-label="Gửi email cho tôi"
-          className="group inline-flex items-center justify-center gap-3 px-12 py-5 min-w-[180px] bg-transparent border-2 border-zinc-700 hover:border-emerald-500/50 hover:bg-zinc-800/50 text-zinc-300 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(16,185,129,0.1)]"
-        >
-          <span className="font-bold tech-font uppercase text-base tracking-widest">Liên Hệ</span>
-        </a>
+
+        {/* Social Actions - Bottom Row */}
+        <div className="flex flex-wrap justify-center items-center gap-3 md:gap-4">
+          {CONTACT_DATA.links.map((link) => (
+            <a
+              key={link.label}
+              href={link.url}
+              target={link.label !== 'Email' ? "_blank" : undefined}
+              rel={link.label !== 'Email' ? "noopener noreferrer" : undefined}
+              aria-label={link.label}
+              className="group inline-flex items-center justify-center gap-3 px-6 py-4 bg-[#0a140a]/40 backdrop-blur-md border border-zinc-800 hover:border-emerald-500/50 hover:bg-zinc-800/50 text-zinc-300 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(16,185,129,0.1)]"
+            >
+              <link.icon size={18} className="text-emerald-500/70 group-hover:text-emerald-400 transition-colors" />
+              <span className="font-bold tech-font uppercase text-xs tracking-widest">{link.label}</span>
+            </a>
+          ))}
+        </div>
       </div>
 
       {/* Divider */}

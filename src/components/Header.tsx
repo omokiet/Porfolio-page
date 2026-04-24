@@ -1,5 +1,5 @@
 import { Terminal } from 'lucide-react';
-import { NAV_LINKS } from '../constants';
+import { NAV_LINKS, CONTACT_DATA } from '../constants';
 import { useState, useEffect, useRef } from 'react';
 
 export default function Header() {
@@ -62,6 +62,25 @@ export default function Header() {
               </a>
             );
           })}
+        </div>
+
+        {/* Social Icons Divider */}
+        <div className="w-px h-4 bg-emerald-900/50 mx-1 hidden sm:block" />
+
+        {/* Social Icons */}
+        <div className="flex items-center gap-3 md:gap-4 ml-1">
+          {CONTACT_DATA.links.map((social) => (
+            <a
+              key={social.label}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={social.label}
+              className="text-zinc-400 hover:text-emerald-400 transition-all duration-300 hover:-translate-y-0.5 p-1"
+            >
+              <social.icon size={18} strokeWidth={2} />
+            </a>
+          ))}
         </div>
       </nav>
     </header>

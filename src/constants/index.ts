@@ -1,4 +1,5 @@
-import { Settings, Palette, Database, Lock, Rocket } from 'lucide-react';
+import { Settings, Palette, Database, Lock, Rocket, Mail } from 'lucide-react';
+import { GithubLogo, LinkedinLogo } from 'phosphor-react';
 import kietImg from '../assets/kiet.jpg';
 
 export const USER_INFO = {
@@ -23,7 +24,7 @@ export const NAV_LINKS = [
   { label: 'Giới thiệu', href: '#about' },
   { label: 'Kỹ năng', href: '#skills' },
   { label: 'Dự án', href: '#projects' },
-  { label: 'Chứng chỉ', href: '#certificates' },
+  { label: 'Chứng chỉ', href: '#certificates'},
 ];
 
 export const SKILLS_DATA = [
@@ -115,6 +116,17 @@ export const PROJECTS_DATA = [
     tags: ['FastAPI', 'React', 'PostgreSQL'],
     link: 'https://github.com/MrT223/Coffee-Manager.git', // TODO: Replace with actual project URL
     github: 'https://github.com/MrT223/Coffee-Manager.git', // TODO: Replace with actual GitHub repository URL
+  },
+  {
+    id: 4,
+    title: 'HCMUE Youth Portal',
+    category: 'Web',
+    subtitle: 'HCMUE YOUTH PORTAL',
+    description: 'Giải pháp quản lý hoạt động Đoàn trường Đại học Sư phạm TP.HCM dành riêng cho văn phòng Đoàn/Hội trường Đại học Sư phạm TP.HCM. Hệ thống hỗ trợ Văn phòng Đoàn/Hội quản lý các nghiệp vụ ngày tình nguyện, mượn phòng, vân vân tích hợp với hệ thống báo cáo tổng quan cho Quản trị viên và phân quyền cho các vai trò khác.',
+    image: '../public/UI Web Portal.jpg',
+    tags: ['FastAPI', 'React', 'PostgreSQL'],
+    link: 'https://youth.hcmue.edu.vn', // TODO: Replace with actual project URL
+    github: '', // TODO: Replace with actual GitHub repository URL
   }
 ];
 
@@ -161,11 +173,19 @@ export const CERTIFICATES_DATA = [
     organization: 'Google',
     year: '2025',
   },
+  {
+    id: 8,
+    title: 'Hackathon Consolation Prize - Open Source Track 2025',
+    organization: 'National IT Club',
+    year: '2025',
+  },
 ];
 
 export const CONTACT_DATA = {
   email: 'kiettuanvocao2005@gmail.com',
   links: [
-    { label: 'Liên Hệ', url: 'mailto:kiettuanvocao2005@gmail.com' },
+    { label: 'GitHub', url: 'https://github.com/omokiet', icon: GithubLogo },
+    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/võ-tuấn-kiệt-cao-a00160405/', icon: LinkedinLogo },
+    { label: 'Email', url: 'mailto:kiettuanvocao2005@gmail.com', icon: Mail },
   ],
 };
