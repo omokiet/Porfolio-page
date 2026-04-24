@@ -90,7 +90,7 @@ export const PROJECTS_DATA = [
     category: 'Security',
     subtitle: 'VULNERABILITY SCANNER',
     description: 'Hệ thống quét lỗ hổng bảo mật toàn diện: rà soát cổng mạng (port scanning), kiểm tra chứng chỉ SSL/TLS, đánh giá cấu hình header bảo mật, quét thư mục ẩn và tự động tìm kiếm tên miền phụ (subdomain) cho website.',
-    image: '../public/Vul-scanner.png',
+    image: '/Porfolio-page/Vul-scanner.png',
     tags: ['Python', 'Nmap', 'Docker'],
     link: 'https://vul-scanner.onrender.com', // TODO: Replace with actual project URL
     github: 'https://github.com/omokiet/Vul-scanner.git', // TODO: Replace with actual GitHub repository URL
@@ -123,7 +123,7 @@ export const PROJECTS_DATA = [
     category: 'Web',
     subtitle: 'HCMUE YOUTH PORTAL',
     description: 'Giải pháp quản lý hoạt động Đoàn trường Đại học Sư phạm TP.HCM dành riêng cho văn phòng Đoàn/Hội trường Đại học Sư phạm TP.HCM. Hệ thống hỗ trợ Văn phòng Đoàn/Hội quản lý các nghiệp vụ ngày tình nguyện, mượn phòng, vân vân tích hợp với hệ thống báo cáo tổng quan cho Quản trị viên và phân quyền cho các vai trò khác.',
-    image: '../public/UI Web Portal.jpg',
+    image: '/Porfolio-page/UI Web Portal.png',
     tags: ['FastAPI', 'React', 'PostgreSQL'],
     link: 'https://youth.hcmue.edu.vn', // TODO: Replace with actual project URL
     github: '', // TODO: Replace with actual GitHub repository URL
