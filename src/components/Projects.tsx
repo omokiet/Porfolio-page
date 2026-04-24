@@ -1,5 +1,7 @@
 import { PROJECTS_DATA } from '../constants';
 import { useState } from 'react';
+import { ExternalLink } from 'lucide-react';
+import { GithubLogo } from 'phosphor-react';
 
 export default function Projects() {
   const tabs = ['Tất cả', 'Web', 'Software/App', 'Game'];
@@ -34,7 +36,7 @@ export default function Projects() {
         {filteredProjects.map((project, index) => (
           <article
             key={project.id}
-            className={`relative flex flex-col justify-end h-72 md:h-96 group rounded-3xl overflow-hidden bg-[#0d1c10] shadow-xl hover:-translate-y-2 transition-transform duration-500 hover:shadow-[0_20px_40px_rgba(46,168,112,0.15)] ${index % 3 === 0 ? 'md:col-span-2' : ''}`}
+            className={`relative flex flex-col justify-end min-h-[20rem] sm:min-h-[24rem] md:min-h-[28rem] group rounded-3xl overflow-hidden bg-[#0d1c10] shadow-xl hover:-translate-y-2 transition-transform duration-500 hover:shadow-[0_20px_40px_rgba(46,168,112,0.15)] ${index % 3 === 0 ? 'md:col-span-2' : ''}`}
           >
             {/* Immersive Image Background */}
             <div className="absolute inset-0 w-full h-full bg-[#050f05]">
@@ -61,16 +63,43 @@ export default function Projects() {
                 {project.description}
               </p>
 
-              {/* Tags wrapper */}
-              <div className="flex flex-wrap justify-center w-full gap-2 mt-auto">
-                {project.tags.map((tag) => (
-                  <span 
-                    key={tag}
-                    className="px-3 py-1.5 rounded-lg border border-emerald-500/30 bg-[#050f05]/70 backdrop-blur-md text-[10px] text-emerald-200 transition-colors cursor-default font-semibold tracking-wider shadow-[0_4px_10px_rgba(0,0,0,0.5)]"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              {/* Tags and Links wrapper */}
+              <div className="flex flex-col w-full gap-4 mt-auto">
+                <div className="flex flex-wrap justify-center w-full gap-2">
+                  {project.tags.map((tag) => (
+                    <span 
+                      key={tag}
+                      className="px-3 py-1.5 rounded-lg border border-emerald-500/30 bg-[#050f05]/70 backdrop-blur-md text-[10px] text-emerald-200 transition-colors cursor-default font-semibold tracking-wider shadow-[0_4px_10px_rgba(0,0,0,0.5)]"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                
+                <div className="flex items-center justify-center w-full gap-3 pt-2">
+                  {project.github && project.github !== '#' && (
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors bg-emerald-500/10 hover:bg-emerald-500/20 px-3 py-1.5 rounded-lg border border-emerald-500/20 backdrop-blur-sm"
+                    >
+                      <GithubLogo size={14} />
+                      GitHub
+                    </a>
+                  )}
+                  {project.link && project.link !== '#' && (
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="flex items-center gap-1.5 text-xs font-semibold text-zinc-200 hover:text-white transition-colors bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-lg border border-white/20 backdrop-blur-sm"
+                    >
+                      <ExternalLink size={14} />
+                      Live Demo
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </article>

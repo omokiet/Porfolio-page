@@ -114,7 +114,7 @@ export const PROJECTS_DATA = [
     description: 'Giải pháp quản lý quán cà phê hiện đại: điều hành nhân sự, kiểm soát kho hàng và sản phẩm, xử lý đơn hàng thời gian thực, tích hợp hệ thống báo cáo doanh thu và chăm sóc khách hàng.',
     image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop',
     tags: ['FastAPI', 'React', 'PostgreSQL'],
-    link: 'https://github.com/MrT223/Coffee-Manager.git', // TODO: Replace with actual project URL
+    link: '', // TODO: Replace with actual project URL
     github: 'https://github.com/MrT223/Coffee-Manager.git', // TODO: Replace with actual GitHub repository URL
   },
   {

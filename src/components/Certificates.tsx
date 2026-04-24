@@ -3,9 +3,9 @@ import { Award, ChevronRight } from 'lucide-react';
 
 export default function Certificates() {
   return (
-    <section id="certificates" className="w-full flex flex-col items-center animate-fade-in-up delay-200 mt-20">
-      <div className="flex items-center gap-4 mb-12 text-center">
-        <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200 drop-shadow-[0_0_15px_rgba(46,168,112,0.5)] font-serif tracking-tight">
+    <section id="certificates" className="w-full flex flex-col items-center animate-fade-in-up delay-200">
+      <div className="flex items-center gap-4 mb-12 text-center px-4">
+        <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200 drop-shadow-[0_0_15px_rgba(46,168,112,0.5)] font-serif tracking-tight py-2 leading-tight md:leading-normal">
           Chứng chỉ & Giải thưởng
         </h2>
       </div>
